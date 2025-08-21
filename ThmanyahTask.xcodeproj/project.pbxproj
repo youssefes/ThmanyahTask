@@ -29,20 +29,28 @@
 		392580492E5720EF00617815 /* ThmanyahTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThmanyahTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		392F10712E57261B0044A595 /* Exceptions for "ThmanyahTask" folder in "ThmanyahTask" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3925802E2E5720ED00617815 /* ThmanyahTask */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		392580312E5720ED00617815 /* ThmanyahTask */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				392F10712E57261B0044A595 /* Exceptions for "ThmanyahTask" folder in "ThmanyahTask" target */,
+			);
 			path = ThmanyahTask;
 			sourceTree = "<group>";
 		};
 		392580422E5720EF00617815 /* ThmanyahTaskTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ThmanyahTaskTests;
-			sourceTree = "<group>";
-		};
-		3925804C2E5720EF00617815 /* ThmanyahTaskUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ThmanyahTaskUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -77,7 +85,6 @@
 			children = (
 				392580312E5720ED00617815 /* ThmanyahTask */,
 				392580422E5720EF00617815 /* ThmanyahTaskTests */,
-				3925804C2E5720EF00617815 /* ThmanyahTaskUITests */,
 				392580302E5720ED00617815 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,9 +159,6 @@
 			);
 			dependencies = (
 				3925804B2E5720EF00617815 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				3925804C2E5720EF00617815 /* ThmanyahTaskUITests */,
 			);
 			name = ThmanyahTaskUITests;
 			packageProductDependencies = (
@@ -396,8 +400,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThmanyahTask/Preview Content\"";
+				DEVELOPMENT_TEAM = 39QXP8MYZF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThmanyahTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -424,8 +430,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThmanyahTask/Preview Content\"";
+				DEVELOPMENT_TEAM = 39QXP8MYZF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThmanyahTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
