@@ -6,7 +6,7 @@ import SwiftUI
 
 public enum ViewModelState<Error>: Equatable {
     case idle
-    case loading(message: String? = nil)
+    case loading
     case successful
     case failed(NetworkError)
 }
@@ -31,11 +31,11 @@ struct BaseView<Content>: View where Content: View {
             content
             if case .loading = state {
                 Spacer()
-//                ShowProgressView()
+                ShowProgressView()
                 Spacer()
             }
         }
-//        .background(DesignSystem.Colors.background.color)
+        .background(.black)
         .onChange(of: state) { oldState, newState  in
             if case let .failed(error) = newState {
                 errorMessage = error.localizedDescription

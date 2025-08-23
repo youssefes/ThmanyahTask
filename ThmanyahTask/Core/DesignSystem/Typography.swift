@@ -9,6 +9,7 @@ extension DesignSystem {
         enum Bold {
             static var caption1 = make(.bold, .caption1)
             static var caption2 = make(.bold, .caption2)
+            static var caption3 = make(.bold, .caption3)
             static var body = make(.bold, .body)
             static var subtitle = make(.bold, .subtitle)
             static var title = make(.bold, .title)
@@ -20,6 +21,7 @@ extension DesignSystem {
         enum SemiBold {
             static var caption1 = make(.semiBold, .caption1)
             static var caption2 = make(.semiBold, .caption2)
+            static var caption3 = make(.semiBold, .caption3)
             static var body = make(.semiBold, .body)
             static var subtitle = make(.semiBold, .subtitle)
             static var title = make(.semiBold, .title)
@@ -31,6 +33,7 @@ extension DesignSystem {
         enum Regular {
             static var caption1 = make(.regular, .caption1)
             static var caption2 = make(.regular, .caption2)
+            static var caption3 = make(.regular, .caption3)
             static var body = make(.regular, .body)
             static var subtitle = make(.regular, .subtitle)
             static var title = make(.regular, .title)
@@ -40,6 +43,7 @@ extension DesignSystem {
         }
         
         enum Medium {
+            static var caption3 = make(.medium, .caption3)
             static var caption1 = make(.medium, .caption1)
             static var caption2 = make(.medium, .caption2)
             static var body = make(.medium, .body)
@@ -51,6 +55,7 @@ extension DesignSystem {
         }
         
         enum ExtraLight {
+            static var caption3 = make(.extraLight, .caption3)
             static var caption1 = make(.extraLight, .caption1)
             static var caption2 = make(.extraLight, .caption2)
             static var body = make(.extraLight, .body)
@@ -62,6 +67,7 @@ extension DesignSystem {
         }
         
         enum Light {
+            static var caption3 = make(.light, .caption3)
             static var caption1 = make(.light, .caption1)
             static var caption2 = make(.light, .caption2)
             static var body = make(.light, .body)
@@ -84,10 +90,11 @@ fileprivate enum FontWeight: String {
 }
 
 fileprivate enum FontSize {
-    case h1, h2, h3, title, subtitle, body, caption1, caption2
+    case h1, h2, h3, title, subtitle, body, caption1, caption2, caption3
     
     var value: CGFloat {
         switch self {
+        case .caption3: return 10
         case .caption2: return 12
         case .caption1: return 13
         case .body: return 14

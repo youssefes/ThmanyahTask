@@ -5,12 +5,8 @@
 import Foundation
 
 class APIUrls {
-    // MARK: -  aroundegypt.com
-    static let baseDomain = "http://localhost:3000"
-    static let getOrders = "/api/orders"
-    static let getOrder = "/api/order"
-    static let login = "/api/login"
-    static let register = "/api/register"
-    static let getProfile = "api/profile"
-    static let socketConnection = "ws://localhost:3000/orders/updates"
+    //MARK: - Base Domain
+    static let baseDomain = "https://api-v2-b2sit6oh3a-uc.a.run.app"
+    //MARK: - Paths
+    static let homeSections = "/home_sections"
 }
