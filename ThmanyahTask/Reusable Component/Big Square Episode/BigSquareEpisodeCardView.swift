@@ -41,7 +41,7 @@ struct BigSquareEpisodeCardView: View {
                         Text(content.name)
                             .lineLimit(1)
                             .foregroundColor(.white)
-                            .font(DesignSystem.Typography.Regular.subtitle)
+                            .font(DesignSystem.Typography.Regular.body)
                         HStack {
                             Text("5h")
                                 .foregroundColor(.white)
@@ -77,5 +77,5 @@ struct BigSquareEpisodeCardView: View {
 }
 
 #Preview {
-    BigSquareEpisodeCardView(content: ContentData(episodeId: "", podcastId: "33223131", name: "NPR News Now", description: "The latest news in five minutes. Updated hourly.", avatarUrl: "https://media.npr.org/assets/img/2023/03/01/npr-news-now_square.png?s=1400&c=66", episodeCount: 2, duration: 600, language: "en", priority: 1, popularityScore: 11, score: 240.0845,authorName: "youseef", releaseDate: "2024-07-23T08:00:00.000Z"))
+    BigSquareEpisodeCardView(content: ContentData(articleId: "", episodeId: "", podcastId: "33223131", name: "NPR News Now", description: "The latest news in five minutes. Updated hourly.", avatarUrl: "https://media.npr.org/assets/img/2023/03/01/npr-news-now_square.png?s=1400&c=66", episodeCount: 2, duration: 600, language: "en", priority: 1, popularityScore: 11, score: 240.0845,authorName: "youseef", releaseDate: "2024-07-23T08:00:00.000Z"))
 }

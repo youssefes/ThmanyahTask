@@ -27,7 +27,7 @@ class HomeViewModel: BaseViewModel, ObservableObject {
                 sections.append(contentsOf: newsections)
                 sections = sections.sorted { $0.order < $1.order }
                 categories = sections.map({ sectionsData in
-                    return CategoryTabModel(title: sectionsData.contentType)
+                    return CategoryTabModel(title: sectionsData.contentType.rawValue)
                 })
                 
                 categories = Array(Set(categories))

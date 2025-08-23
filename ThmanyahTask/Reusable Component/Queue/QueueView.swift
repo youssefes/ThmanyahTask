@@ -12,7 +12,7 @@ struct QueueView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 16) {
-                ForEach(content, id: \.podcastId) { item in
+                ForEach(content, id: \.self) { item in
                     QueueCardView(contant: item)
                 }
             }

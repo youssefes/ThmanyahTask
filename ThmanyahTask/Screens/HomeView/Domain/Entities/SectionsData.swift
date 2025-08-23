@@ -10,7 +10,14 @@ struct SectionsData : Identifiable{
     let id : String = UUID().uuidString
 	let name : String
 	let type : SectionsType
-	let contentType : String
+	let contentType : ContentType
 	let order : Int
 	let content : [ContentData]
+}
+
+enum ContentType: String, Codable {
+    case podcast
+    case episode
+    case audioBook = "audio_book"
+    case audioArticle = "audio_article"
 }

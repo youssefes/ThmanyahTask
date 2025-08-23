@@ -62,7 +62,7 @@ struct HomeView: View {
             SectionHeader(title: section.name, seeMoreAction: {
                 print("square See More")
             })
-            SquareCardsView(content: section.content)
+            SquareCardsView(content: section.content, contentType: section.contentType)
         case .queue:
             // MARK: Section: Queue
             SectionHeader(title: section.name, seeMoreAction: {

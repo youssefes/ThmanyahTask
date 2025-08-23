@@ -4,7 +4,8 @@
 //
 //  Created by youssef on 22/08/2025.
 
-struct ContentData : Codable {
+struct ContentData : Codable,Hashable {
+    let articleId: String
     let episodeId: String
     let podcastId : String
     let name : String

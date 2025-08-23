@@ -3,7 +3,7 @@ import Foundation
 struct SectionsDataDTO : Codable {
 	let name : String?
 	let type : SectionsType?
-	let contentType : String?
+	let contentType : ContentType
 	let order : Int?
     let content : [ContentDataDTO]?
     

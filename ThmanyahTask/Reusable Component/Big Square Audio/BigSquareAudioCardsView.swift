@@ -11,8 +11,8 @@ struct BigSquareAudioCardsView: View {
     var audiobooks: [ContentData]
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack(spacing: 16) {
-                ForEach(audiobooks, id: \.podcastId) { item in
+            HStack(spacing: 16) {
+                ForEach(audiobooks, id: \.self) { item in
                     BigSquareAudioCardView(content: item)
                 }
             }

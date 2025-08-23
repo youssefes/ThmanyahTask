@@ -9,11 +9,12 @@ import SwiftUI
 
 struct SquareCardsView: View {
     var content: [ContentData]
+    var contentType: ContentType
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack(spacing: 16) {
-                ForEach(content, id: \.podcastId) { item in
-                    SquareCardView(content: item)
+            HStack(spacing: 16) {
+                ForEach(content, id: \.self) { item in
+                    SquareCardView(content: item,contentType: contentType)
                 }
             }
         }
@@ -21,5 +22,5 @@ struct SquareCardsView: View {
 }
 
 #Preview {
-    SquareCardsView(content: [])
+    SquareCardsView(content: [], contentType: .audioArticle)
 }

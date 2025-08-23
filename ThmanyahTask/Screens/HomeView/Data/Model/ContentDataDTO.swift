@@ -1,6 +1,7 @@
 
 import Foundation
 struct ContentDataDTO : Codable {
+    let article_id: String?
     let episodeId: String?
 	let podcastId : String?
 	let name : String?
@@ -31,5 +32,6 @@ struct ContentDataDTO : Codable {
         case releaseDate = "release_date"
         case authorName = "author_name"
         case episodeId = "episode_id"
+        case article_id = "article_id"
 	}
 }
